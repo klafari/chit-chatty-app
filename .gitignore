@@ -23,6 +23,9 @@ ENV/
 db.sqlite3
 media/
 
+# Migrations
+*/migrations/
+
 # OS files
 .DS_Store
 Thumbs.db
