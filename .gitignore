@@ -1,31 +1,66 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
+*.pyc
 *.pyo
-*.pyd
+
+# C extensions
 *.so
 
-# Virtual environment
-venv/
-env/
-ENV/
-.venv/
-.ENV/
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# VS Code settings
-.vscode/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Django stuff
-*.log
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
 *.pot
-*.pyc
-*.sqlite3
+
+# Django stuff:
+*.log
+local_settings.py
 db.sqlite3
-media/
 
-# Migrations
-*/migrations/
-
-# OS files
-.DS_Store
-Thumbs.db
+# Environments
+.env
+.venv
+myenv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

@@ -16,7 +16,7 @@ import random
 import requests
 import json
 import datetime
-import Levenshtein
+from rapidfuzz import fuzz
 import string
 from contractions import fix
 
@@ -390,9 +390,9 @@ def quiz_check_answer(request):
         request.session['user_answer'] = user_answer
         request.session['correct_answer'] = correct_answer
 
-        # Calculate similarity using Levenshtein
-        similarity = Levenshtein.ratio(processed_user_answer, processed_correct_answer) * 100  # noqa: E501
-        print(f"Levenshtein Similarity Score: {similarity}")
+        # Calculate similarity using rapidfuzz
+        similarity = fuzz.ratio(processed_user_answer, processed_correct_answer)
+        print(f"Similarity Score: {similarity}")
 
         # Increment correct/incorrect counts in session
         correct_count = request.session.get('correct_count', 0)
